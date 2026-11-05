@@ -1,0 +1,9 @@
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-multipart>=0.0.9
+openai>=1.50
+python-dotenv>=1.0
+pillow>=10.1
+requests>=2.31
+imageio-ffmpeg>=0.5     # bundled ffmpeg: converts browser audio (webm) to WAV for Muse Voice Transcribe
+modal>=0.66
