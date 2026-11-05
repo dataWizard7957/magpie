@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Magpie">
+  <title>Magpie</title>
+  <!-- linen badge with a stitched edge -->
+  <circle cx="64" cy="64" r="62" fill="#f6f0e4"/>
+  <circle cx="64" cy="64" r="56" fill="none" stroke="#a4542f" stroke-width="2" stroke-dasharray="5 4" stroke-linecap="round"/>
+
+  <!-- tail: long, with the magpie's blue sheen -->
+  <path d="M50 80 L18 104 Q15 108 20 109 L56 88 Z" fill="#3f5f8a"/>
+  <path d="M50 80 L24 101 L28 102 L54 85 Z" fill="#2b2a33" opacity=".55"/>
+
+  <!-- body -->
+  <ellipse cx="62" cy="74" rx="25" ry="17" transform="rotate(-28 62 74)" fill="#2b2a33"/>
+  <!-- white belly -->
+  <path d="M60 86 C70 90 82 84 85 71 C80 78 70 83 60 86 Z" fill="#fffaf1"/>
+  <ellipse cx="74" cy="80" rx="10" ry="6.5" transform="rotate(-35 74 80)" fill="#fffaf1"/>
+  <!-- white wing patch -->
+  <path d="M50 66 C56 60 66 58 72 61 C64 63 57 67 52 72 Z" fill="#fffaf1"/>
+
+  <!-- head -->
+  <circle cx="80" cy="47" r="13" fill="#2b2a33"/>
+  <!-- beak -->
+  <path d="M91 45 L106 49 L91 52 Z" fill="#2b2a33"/>
+
+  <!-- legs -->
+  <path d="M64 89 L62 99 M70 87 L70 98" stroke="#2b2a33" stroke-width="2.4" stroke-linecap="round"/>
+
+  <!-- the treasure: a golden thread held in the beak, stitching downward -->
+  <path d="M106 49 C118 62 112 92 88 104 C70 113 52 112 40 116"
+        fill="none" stroke="#c9963b" stroke-width="2.6" stroke-dasharray="6 4.5" stroke-linecap="round"/>
+  <circle cx="106" cy="49" r="4.2" fill="#e2b45a" stroke="#c9963b" stroke-width="1.2"/>
+  <circle cx="104.8" cy="47.8" r="1.2" fill="#fff6dc"/>
+</svg>

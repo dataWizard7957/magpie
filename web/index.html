@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Magpie</title>
+  <meta name="description" content="Magpie keeps a family's stories safe and shares them gently.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">
+      <img class="logo" src="logo.svg" alt="Magpie logo">
+      <div>
+        <h1>Magpie</h1>
+        <p class="tag">Keeping their treasures safe.</p>
+      </div>
+    </div>
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="session" role="tab">Visit</button>
+      <button class="tab" data-tab="family" role="tab">Family</button>
+      <button class="tab" data-tab="quilt" role="tab">Quilt</button>
+    </nav>
+    <div class="persona" id="persona"></div>
+  </header>
+
+  <main>
+    <!-- ============ VISIT ============ -->
+    <section id="tab-session" class="panel active">
+      <div id="visit-start" class="visit-start">
+        <h2 class="display">A visit with <span id="pname">Rose</span></h2>
+        <p class="lede">Magpie shares <span class="pname">Rose</span>'s stories, verified by the family.</p>
+        <div class="start-options">
+          <button class="big primary" data-start="agent">Let Magpie choose today's stories</button>
+          <button class="big ghost" data-start="demo">Summers and the lake</button>
+        </div>
+        <p class="small muted" id="provider-line"></p>
+      </div>
+
+      <div id="visit" class="visit hidden">
+        <div class="keepsake">
+          <figure id="keepsake-figure">
+            <div class="frame"><img id="keepsake-img" alt=""></div>
+            <figcaption>
+              <span id="keepsake-title"></span>
+              <span class="chip" id="keepsake-label"></span>
+            </figcaption>
+          </figure>
+          <p class="theme" id="visit-theme"></p>
+        </div>
+
+        <div class="talk">
+          <div id="conversation" class="conversation" aria-live="polite"></div>
+          <div id="thinking" class="thinking hidden"><span></span><span></span><span></span></div>
+          <audio id="clip" preload="auto"></audio>
+
+          <form id="reply-form" class="reply">
+            <button type="button" id="mic" class="mic" aria-label="Speak">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.9V21h2v-2.1A7 7 0 0 0 19 12h-2z"/></svg>
+              <span>Speak</span>
+            </button>
+            <input id="reply-text" type="text" autocomplete="off" placeholder="Or type their words here…">
+            <button type="submit" class="primary">Send</button>
+          </form>
+
+          <div class="controls">
+            <button id="btn-switch" class="soft">Talk about something else</button>
+            <button id="btn-camera" class="soft">Show Magpie a keepsake</button>
+            <button id="btn-end" class="soft">Finish for today</button>
+            <label class="toggle"><input type="checkbox" id="speak-toggle" checked> Magpie speaks aloud</label>
+            <label class="toggle"><input type="checkbox" id="trace-toggle" checked> Show how Magpie decides</label>
+          </div>
+        </div>
+      </div>
+
+      <div id="visit-done" class="visit-done hidden">
+        <h2 class="display">Thank you for today</h2>
+        <p id="visit-summary" class="summary"></p>
+        <button class="big primary" id="btn-again">Start another visit</button>
+      </div>
+
+      <dialog id="camera-dialog">
+        <h3>Hold the keepsake up to the camera</h3>
+        <video id="camera" autoplay playsinline muted></video>
+        <p id="camera-status" class="muted small"></p>
+        <div class="row">
+          <button id="btn-snap" class="primary">That's it</button>
+          <button id="btn-camera-close" class="ghost">Close</button>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- ============ FAMILY ============ -->
+    <section id="tab-family" class="panel">
+      <div class="family-head">
+        <div>
+          <h2 class="display"><span class="pname">Rose</span>'s story, kept by the family</h2>
+          <p class="muted">Magpie suggests. You confirm. Only confirmed facts are ever shared with <span class="pname">Rose</span>.</p>
+        </div>
+        <label class="who">You are
+          <select id="contributor"></select>
+        </label>
+      </div>
+
+      <nav class="subtabs">
+        <button class="sub active" data-sub="keepsakes">Keepsakes</button>
+        <button class="sub" data-sub="add">Add a story</button>
+        <button class="sub" data-sub="review">Review <span class="count" id="review-count"></span></button>
+        <button class="sub" data-sub="archive">Stories</button>
+        <button class="sub" data-sub="visits">Visits</button>
+        <button class="sub" data-sub="cards">Conversation cards</button>
+      </nav>
+
+      <div class="subpanel active" id="sub-keepsakes">
+        <div class="keepsake-layout">
+          <div>
+            <form id="upload-form" class="card upload">
+              <h3>Add a keepsake</h3>
+              <input type="file" name="file" accept="image/*" required>
+              <input type="text" name="title" placeholder="What is it? e.g. Grandpa's watch">
+              <select name="type">
+                <option value="object">Object</option>
+                <option value="document">Letter, card or recipe</option>
+                <option value="photo">Photo</option>
+                <option value="place">Place</option>
+              </select>
+              <button class="primary">Add keepsake</button>
+            </form>
+            <div id="items-grid" class="items-grid"></div>
+          </div>
+          <div id="item-detail" class="card item-detail">
+            <p class="muted">Choose a keepsake to see what Magpie knows about it.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="subpanel" id="sub-add">
+        <div class="two-col">
+          <form id="story-form" class="card">
+            <h3>Write a story about <span class="pname">Rose</span></h3>
+            <textarea name="text" rows="6" placeholder="They always talked about…"></textarea>
+            <label>About this keepsake (optional)
+              <select name="item_id" class="item-select"><option value="">None</option></select>
+            </label>
+            <button class="primary">Save story</button>
+          </form>
+          <form id="voice-form" class="card">
+            <h3>Record a voice note</h3>
+            <p class="muted small">Your own voice, in your own words. Magpie never copies or imitates voices.</p>
+            <div class="row">
+              <button type="button" id="voice-rec" class="soft">● Record</button>
+              <span id="voice-status" class="muted small">or choose a file</span>
+            </div>
+            <input type="file" name="file" accept="audio/*">
+            <label>Which story is it about? (optional)
+              <select name="story_id" class="story-select"><option value="">A new story</option></select>
+            </label>
+            <label class="toggle"><input type="checkbox" name="play_in_tell" checked> Play it to <span class="pname">Rose</span> when Magpie tells this story</label>
+            <button class="primary">Save voice note</button>
+          </form>
+        </div>
+        <div id="add-result"></div>
+        <div class="card">
+          <h3>Voice notes</h3>
+          <div id="voice-list"></div>
+        </div>
+      </div>
+
+      <div class="subpanel" id="sub-review">
+        <div id="review"></div>
+      </div>
+
+      <div class="subpanel" id="sub-archive">
+        <div id="archive"></div>
+      </div>
+
+      <div class="subpanel" id="sub-visits">
+        <div id="grounding-tiles" class="tiles"></div>
+        <div id="visits"></div>
+      </div>
+
+      <div class="subpanel" id="sub-cards">
+        <div class="row between">
+          <p class="muted">Conversation starters built only from confirmed stories.</p>
+          <button id="btn-cards" class="primary">Make cards</button>
+        </div>
+        <div id="cards" class="cards"></div>
+      </div>
+    </section>
+
+    <!-- ============ QUILT ============ -->
+    <section id="tab-quilt" class="panel">
+      <div class="row between">
+        <div>
+          <h2 class="display"><span class="pname">Rose</span>'s Memory Quilt</h2>
+          <p class="muted" id="quilt-meta"></p>
+        </div>
+        <div class="row">
+          <button id="btn-export" class="primary">Save the whole quilt</button>
+        </div>
+      </div>
+      <div id="quilt" class="quilt"></div>
+      <p class="small muted" id="export-link"></p>
+    </section>
+  </main>
+
+  <footer>
+    <span><strong>Rose Ellis and her family are a demo persona.</strong> Pictures are AI-generated illustrations; family voice notes use AI stock voices.</span>
+    <span>Built with Muse Spark, Muse Image, Muse Voice Transcribe and Muse Glimmer (open weights).</span>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+</html>

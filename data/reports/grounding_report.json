@@ -1,0 +1,2184 @@
+{
+  "generated_at": "2026-11-04T00:40:56",
+  "provider": "glimmer",
+  "model": "muse-glimmer:30b-q4_K_M",
+  "rose_provider": "meta",
+  "sessions_run": 20,
+  "seconds": 7052.7,
+  "stats": {
+    "lines": 205,
+    "lines_checked": 176,
+    "claims_traced": 489,
+    "invented_spoken": 0,
+    "drafts_caught": 13,
+    "fallbacks": 1,
+    "unchecked": 0,
+    "by_mode": {
+      "ask": 58,
+      "reflect": 36,
+      "hint": 64,
+      "tell": 18,
+      "voice": 9,
+      "close": 20
+    },
+    "sessions": 20
+  },
+  "caught_examples": [
+    {
+      "session": "ccc3c55494",
+      "mode": "ask",
+      "final": "Hello Rose. I see a blue-rimmed teacup on the screen. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "3021642216",
+      "mode": "ask",
+      "final": "Hello Rose, it is lovely to see you. I see a blue-rimmed teacup on the screen, would you tell me about it.",
+      "fallback": false
+    },
+    {
+      "session": "208a64a442",
+      "mode": "ask",
+      "final": "Hello Rose. Today’s theme is Simulated visit 8 and I see a smooth lake pebble here. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "b62876c9de",
+      "mode": "ask",
+      "final": "Hello Rose. I see a smooth lake pebble on the screen. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "e77c315603",
+      "mode": "tell",
+      "final": "You can see an old cinema ticket on screen. That is from your first date with Frank, a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box, and it is a lovely keepsake.",
+      "fallback": false
+    },
+    {
+      "session": "ff304987b5",
+      "mode": "ask",
+      "final": "Hello Rose. The keepsake on screen is a lake at dawn. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "6aabd44f70",
+      "mode": "ask",
+      "final": "Hello dear. I see a blue-rimmed teacup on screen. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "6aabd44f70",
+      "mode": "hint",
+      "final": "A gift on your wedding day... There's no hurry at all.",
+      "fallback": true
+    },
+    {
+      "session": "8dfdfb6099",
+      "mode": "ask",
+      "final": "Hello Rose. I see a postcard from the lake on the screen. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "e87c9139a2",
+      "mode": "ask",
+      "final": "Hello Rose. Would you tell me about the blue-rimmed teacup on screen. What does this bring to mind",
+      "fallback": false
+    },
+    {
+      "session": "d0f83289be",
+      "mode": "ask",
+      "final": "Hello Rose. I see a cabin by the lake with you. Would you tell me about it?",
+      "fallback": false
+    },
+    {
+      "session": "658eaa8a2c",
+      "mode": "ask",
+      "final": "Hello Rose. I see a blue-rimmed teacup on screen. Would you tell me about it?",
+      "fallback": false
+    }
+  ],
+  "transcripts": [
+    {
+      "session": "ccc3c55494",
+      "summary": "Looked at 3 keepsakes (Simulated visit 1). A blue-rimmed teacup: told it herself. An old cinema ticket: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 28 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. I see a blue-rimmed teacup on the screen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes, those are like Mama Edith's blue-rimmed cups. June and I had tea every Sunday afternoon at the kitchen table, I was eight and poured ever so careful. We kept it up for over sixty years, even by phone later on.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You remember Mama Edith’s blue-rimmed cups, and you and June having tea every Sunday afternoon at the kitchen table. You were eight and poured ever so careful, and you kept it up for over sixty years, even by phone later on. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old cinema ticket. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, it was a Saturday afternoon in Duluth with Frank. There's no hurry at all, I'm happy to tell you about it when you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, popcorn and a little cinema on First Street come to mind. There's no hurry, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You have an old cinema ticket here. You and Frank went on your first date at the Lyric Theatre in Duluth on a Saturday matinee. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box. It is a sweet keepsake for you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a little silver rose brooch. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... I'm not sure, dear. I don't quite remember that one.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, the family thinks of it as a little gift from your wedding day. There is no hurry at all and I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... I remember now. Margaret pinned that little silver rose on my dress that day, and I wore it to every wedding after.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, you remember Margaret pinned that little silver rose on your dress that day, and you wore it to every wedding after. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "6966354e80",
+      "summary": "Looked at 2 keepsakes (Simulated visit 2). A smooth lake pebble: told it herself. An old car key: stopped here to rest. Grounding: 12 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, it's lovely to see you. Today's theme is Simulated visit 2. I see a smooth lake pebble here, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, that takes me back to Loon Lake. We had the little cabin with the green door and that old wooden dock where I taught Anne to swim, and after we'd pick wild blueberries along the shore.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "That smooth lake pebble takes you back to Loon Lake, to the little cabin with the green door and that old wooden dock where you taught Anne to swim and you picked wild blueberries along the shore. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old car key. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? Oh, I can't quite... I'd like to rest now, if that's alright?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Let's rest for now. Thank you for this lovely time together.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "8d1601809a",
+      "summary": "Looked at 3 keepsakes (Simulated visit 3). A blue-rimmed teacup: told it herself. An old cinema ticket: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 24 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, today's theme is Simulated visit 3. I see a blue-rimmed teacup on screen, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, those blue-rimmed cups were Mama Edith's... June and I had tea every Sunday afternoon at the kitchen table. I was eight and poured so very carefully, and we kept it up for over sixty years, even by phone later on.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, those blue-rimmed cups were Mama Edith's. You and June had tea every Sunday afternoon at the kitchen table, you were eight and poured so very carefully, and you kept it up for over sixty years, even by phone later on. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old cinema ticket. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... popcorn... Frank was nervous.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "I think of a Saturday afternoon in Duluth with Frank. There is no hurry, I am happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The family hint speaks of popcorn and a little cinema on First Street. There's no hurry, and I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "Rose, you have an old cinema ticket on the screen. You and Frank had your first date at a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box. That is a sweet little gift to hold.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a little silver rose brooch. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh dear... I'm not sure, love. I can't quite place it right now.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The family hint whispers about a gift on your wedding day. There is no hurry at all, I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, that helps, dear. Yes, Margaret pinned her little silver rose on my dress that June day, and said I should always wear a rose.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, that June day Margaret pinned her little silver rose on your dress and said you should always wear a rose. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "d37b0e311c",
+      "summary": "Looked at 3 keepsakes (Simulated visit 4). A cabin by the lake: told it herself. An old car key: heard the story from Magpie after 2 hints, and heard Priya's voice note. A yellow kitchen: got there with 2 hints. Grounding: 27 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, today is Simulated visit 4. I see a cabin by the lake, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes, our little cabin on Loon Lake with the green door. Anne learned to swim right off that wooden dock, and we'd pick those sweet little wild blueberries along the shore.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Oh yes, your little cabin on Loon Lake with the green door. Anne learned to swim right off that wooden dock and you picked those sweet little wild blueberries along the shore. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's an old car key. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank spent one winter working in the garage. There is no hurry at all, and I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue and you gave it a flower’s name. There’s no hurry at all, I’m happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I just can't place it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "This is the old car key from Bluebell. Frank rebuilt the powder-blue station wagon in the garage over one winter and you named her Bluebell. It took the whole family to Loon Lake every summer, with Michael singing in the back seat. You kept Bluebell's key long after the car was gone. You have held onto a very dear part of your family.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a yellow kitchen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... yellow? I'm... I'm not sure, dear.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, that yellow kitchen is where you made something sweet for every birthday. There’s no hurry at all, and I’m happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "I'm not sure, dear... maybe... a cake?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, it had berries from the lake in it. There's no hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... the Loon Lake blueberries. I baked that buckle for every birthday in my little yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You spoke about the Loon Lake blueberries and baking that buckle for every birthday in your little yellow kitchen. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "3021642216",
+      "summary": "Looked at 3 keepsakes (Simulated visit 5). A blue-rimmed teacup: told it herself. An old main street: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 24 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, it is lovely to see you. I see a blue-rimmed teacup on the screen, would you tell me about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes — that's Mama Edith's blue-rimmed cup. June and I had tea every Sunday afternoon at the kitchen table, I was eight and I poured very carefully.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, that's Mama Edith's blue-rimmed cup. You and June had tea every Sunday afternoon at the kitchen table and you were eight and poured very carefully. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is an old main street. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Main street... um... popcorn... Frank was nervous.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The family thinks of a Saturday afternoon in Duluth with Frank. There is no hurry at all, I am happy to tell you about it whenever you would like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Popcorn makes me think of that little cinema on First Street. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "Rose, you are looking at an old main street. Your first date with Frank was a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box. Frank is your husband and that sweet love stays with you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's a little silver rose brooch. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm sorry dear, I'm not quite sure. It does look familiar, though.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, this little silver rose was a gift on your wedding day. There's no hurry at all, and I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... Margaret pinned it on my dress that day, didn't she? She said I should always wear a rose.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, you say Margaret pinned it on your dress that day and she said you should always wear a rose. That was your wedding day in June 1969. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "bca22921e7",
+      "summary": "Looked at 3 keepsakes (Simulated visit 6). A lake at dawn: told it herself. An old car key: heard the story from Magpie after 2 hints, and heard Priya's voice note. A handwritten recipe card: got there with 2 hints. Grounding: 26 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, welcome for simulated visit 6. I see a lake at dawn on the screen, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes, that's Loon Lake... our little cabin had the green door, you see? Frank'd be out at dawn fishing, bless him, and Anne learned to swim right off that old wooden dock where we picked blueberries.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, that's Loon Lake, your little cabin with the green door. Frank would be out at dawn fishing, bless him, and Anne learned to swim off that old wooden dock where you picked blueberries. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old car key. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Frank did build something in the garage one winter. There’s no hurry at all, I’m happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... was it Frank's car? I'm sorry, dear, I just can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was a blue car and you gave it a flower name. There is no hurry at all, I am happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You are holding an old car key. Frank rebuilt an old powder-blue station wagon in the garage over one winter and you named it Bluebell. It took the whole family to Loon Lake every summer with Michael singing in the back seat. You kept Bluebell's key long after the car was gone.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a handwritten recipe card. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... is that... a cake, maybe? I'm not sure, dear.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "You baked this for every family birthday, dear. There’s no hurry at all, I’m happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... birthdays, you say? I'm not sure, dear... maybe blueberry?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The berries you used came from the lake, Rose. No hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... Loon Lake, of course. My blueberry buckle — I made it for every birthday in that yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Loon Lake, of course. You made your blueberry buckle for every birthday in that yellow kitchen. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "That was a lovely visit. Thank you for spending this time with me.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "78da8f86f7",
+      "summary": "Looked at 3 keepsakes (Simulated visit 7). A blue-rimmed teacup: told it herself. An old main street: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 24 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, today's theme is Simulated visit 7. Would you tell me about the blue-rimmed teacup on screen?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh my, yes... that's one of Mama Edith's blue-rimmed cups. June and I had tea from those every Sunday at the kitchen table, I was eight and poured ever so careful, and we kept it up for over sixty years, even by phone later on.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, that's one of Mama Edith's blue-rimmed cups. June and you had tea from those every Sunday at the kitchen table in the Hartley house, you were eight and poured ever so careful, and you kept it up for over sixty years, even by phone later on. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old main street. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "This is a Saturday afternoon in Duluth with Frank. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... Saturday, yes... popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The family talked about popcorn and a little cinema on First Street. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You have an old main street on the screen. That brings me to you and Frank, your husband. Your first date was a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one, and you kept the ticket stub in your jewellery box. I love this sweet story with you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is a little silver rose brooch. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm sorry dear, I'm not quite sure. It does look familiar, though.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was a gift on your wedding day, Rose. There is no hurry at all and I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes, that helped, dear. Margaret pinned that little silver rose on my dress that June day, and said I should always wear a rose. I wore it to every family wedding after that.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, you said Margaret pinned that little silver rose on your dress that June day in 1969 and told you to always wear a rose. You wore it to every family wedding after that. Thank you for sharing that with me, dear.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "208a64a442",
+      "summary": "Looked at 3 keepsakes (Simulated visit 8). A smooth lake pebble: told it herself. A blue station wagon: heard the story from Magpie after 2 hints, and heard Priya's voice note. A handwritten recipe card: got there with 2 hints. Grounding: 24 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. Today’s theme is Simulated visit 8 and I see a smooth lake pebble here. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... Loon Lake. Frank would fish at dawn off our little wooden dock, and Anne and I would pick wild blueberries right along the shore.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, Loon Lake. Frank would fish at dawn off your little wooden dock, and you and Anne would pick wild blueberries right along the shore. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That is a blue station wagon. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank did build something in the garage one winter. There's no hurry at all, and I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue and you gave it a flower name. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I just can't place it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You have Bluebell, the powder-blue station wagon Frank rebuilt in the garage over one winter. You named it Bluebell. It took the whole family to Loon Lake every summer, with Michael singing in the back seat. You kept Bluebell's key long after the car was gone. It is a lovely gift to have with you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is a handwritten recipe card. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm not quite sure... berries, maybe?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It's the thing you baked for every family birthday, Rose. There's no hurry at all, and I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh dear, I'm not... was it a cake, maybe?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Those berries were saved from the lake. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, Loon Lake... yes, I remember now. My blueberry buckle, I baked it for every birthday in that yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Oh Loon Lake. You remember your blueberry buckle, baked for every birthday in that yellow kitchen. Thank you for sharing that memory with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "7ed8dfc13f",
+      "summary": "Looked at 2 keepsakes (Simulated visit 9). A blue-rimmed teacup: told it herself. An old cinema ticket: stopped here to rest. Grounding: 11 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, it's nice to see you today for Simulated visit 9. I see a blue-rimmed teacup on the screen, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... those blue-rimmed cups were Mother's, Edith's. June and I had tea at the kitchen table every Sunday afternoon, I was eight and poured very careful, and we kept it going for years, even by phone.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Those blue-rimmed cups were Mother's, Edith's. You and June had tea at the kitchen table every Sunday afternoon, you were eight and poured very careful, and you kept it going for years, even by phone. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's an old cinema ticket. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, that... popcorn, I think. Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "That Saturday afternoon in Duluth with Frank is part of this little ticket. There's no hurry at all, I'm happy to tell you about it whenever you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "That's sweet of you, dear... I'm feeling a little tired now. Could I rest a while?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "That's plenty for today. Thank you for sitting with me.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "b62876c9de",
+      "summary": "Looked at 3 keepsakes (Simulated visit 10). A smooth lake pebble: told it herself. An old car key: heard the story from Magpie after 2 hints, and heard Priya's voice note. A handwritten recipe card: got there with 2 hints. Grounding: 31 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. I see a smooth lake pebble on the screen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, that takes me back to Loon Lake. Anne and I would sit on the old wooden dock after her swim and eat those wild blueberries till our fingers were blue.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "That takes you back to Loon Lake. You and Anne sitting on the old wooden dock after her swim and eating wild blueberries till your fingers were blue. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old car key. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank worked on a project in the garage one winter. There's no hurry, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It's blue, and you gave it a flower name. There's no hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "This is Bluebell's key, Rose. Frank rebuilt an old powder-blue station wagon in your garage over one winter and you named it Bluebell. It took the whole family to Loon Lake every summer with Michael singing in the back seat. You kept Bluebell's key long after the car was gone.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a handwritten recipe card. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh hmm. I'm not quite sure, dear.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was something you baked for every family birthday. There is no hurry at all, and I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... was it a cake, maybe? I'm not quite sure.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It had berries from the lake in it. There is no hurry at all, and I am happy to tell you about it when you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... the berries from Loon Lake. My blueberry buckle, I made it for every birthday in that yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, you’re talking about the berries from Loon Lake and your blueberry buckle you made for every birthday in that yellow kitchen. I see the recipe card you wrote for Anne in 1983. Thank you for sharing that memory with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "That was a lovely visit. Thank you for spending this time with me.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "e77c315603",
+      "summary": "Looked at 3 keepsakes (Simulated visit 11). A blue-rimmed teacup: told it herself. An old cinema ticket: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 24 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, it’s lovely to see you. Today’s theme is Simulated visit 11. I see a blue-rimmed teacup on the screen, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... those blue-rimmed cups were Mother's, Edith's. June and I had tea every Sunday at the kitchen table, and I did the pouring, very careful, since I was eight.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Oh yes, those blue-rimmed cups were Mother's, Edith's. June and you had tea every Sunday at the kitchen table, and you did the pouring very carefully since you were eight. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is an old cinema ticket. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "This little ticket is from a Saturday afternoon in Duluth with Frank. There is no hurry at all, I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "That popcorn moment is linked to a little cinema on First Street. There is no hurry at all, and I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You can see an old cinema ticket on screen. That is from your first date with Frank, a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box, and it is a lovely keepsake.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a little silver rose brooch. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm not sure, dear... it looks familiar, but I can't quite place it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "That little rose came to you on your wedding day. There is no hurry at all, I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, that's right... Margaret pinned that little silver rose on my dress that June day. She said I should always wear a rose.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, you remember Margaret pinned that little silver rose on your dress that June day and she said you should always wear a rose. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "ff304987b5",
+      "summary": "Looked at 3 keepsakes (Simulated visit 12). A lake at dawn: told it herself. An old car key: heard the story from Magpie after 2 hints, and heard Priya's voice note. A handwritten recipe card: got there with 2 hints. Grounding: 27 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. The keepsake on screen is a lake at dawn. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... that's Loon Lake. Our cabin had the green door and that old wooden dock, Frank would be out there at dawn and hardly catch a thing. I taught Anne to swim off that dock, and we'd pick blueberries along the shore.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, oh yes that's Loon Lake. Your cabin had the green door and that old wooden dock, Frank would be out there at dawn and hardly catch a thing. You taught Anne to swim off that dock and you'd pick blueberries along the shore. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is an old car key. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank did build something in the garage one winter. There's no hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue, and you named it after a flower. There's no hurry at all, and I'm happy to tell you about it whenever you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "Rose, this old car key on the keyring is from Bluebell. Frank rebuilt an old powder-blue station wagon in your garage over one winter and you named it Bluebell. It took the whole family to Loon Lake every summer, with Michael singing in the back seat. You kept Bluebell's key long after the car was gone. It is a sweet little gift to hold.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is a handwritten recipe card. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm not quite sure yet. Maybe... berries?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, it was a birthday bake you made for the family. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... birthdays? I'm not quite sure, dear.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The berries in that recipe came from the lake, Rose. There's no hurry at all, I'm happy to tell you about it whenever you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, Loon Lake... yes, that's it. We saved those berries for the birthday buckle in that yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You said Loon Lake, yes that’s it, we saved those berries for the birthday buckle in that yellow kitchen. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "ed2027f451",
+      "summary": "Looked at 3 keepsakes (Simulated visit 13). A blue-rimmed teacup: told it herself. An old main street: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 23 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, today's theme is Simulated visit 13. I see a blue-rimmed teacup on screen with you, what does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, those blue-rimmed cups... June and me, every Sunday afternoon at the kitchen table, Mama let us use them. I was eight and I did the pouring, so careful.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Those blue-rimmed cups with June and you every Sunday afternoon at the kitchen table, Mama letting you use them. You were eight and you did the pouring so careful. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old main street. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "That Saturday afternoon in Duluth with Frank is a special one. There's no hurry, I'm happy to tell you about it when you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Popcorn makes me smile. That little cinema on First Street feels so close to that memory. There's no hurry at all, I'm happy to tell you about it when you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "Rose, you have an old main street on screen. Your first date with Frank was a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box. That is a lovely story to keep close to you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a little silver rose brooch. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh my, I'm not sure, dear. It does look familiar, but I can't quite place it just now.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, family said it was a gift on your wedding day. There is no hurry at all, and I am happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... now I remember. Margaret pinned that little silver rose on my dress, and said I should always wear a rose.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You remember Margaret pinned that little silver rose on your dress, and said you should always wear a rose. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "bb9ac4e2db",
+      "summary": "Looked at 3 keepsakes (Simulated visit 14). A postcard from the lake: told it herself. A blue station wagon: heard the story from Magpie after 2 hints, and heard Priya's voice note. A handwritten recipe card: got there with 2 hints. Grounding: 26 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, it's nice to see you for Simulated visit 14. The keepsake on screen is a postcard from the lake, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, Loon Lake... our little cabin with the green door. Anne learned to swim right off that old wooden dock, and we'd pick blueberries along the shore till our fingers were all blue.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Loon Lake, your little cabin with the green door. Anne learned to swim right off that old wooden dock, and you picked blueberries along the shore till your fingers were all blue. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's a blue station wagon. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank did build something in the garage one winter. There's no hurry at all and I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't quite think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue, and you gave it a flower name. There's no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "That blue station wagon on screen is Bluebell. Frank rebuilt an old powder-blue station wagon in the garage over one winter and you named it Bluebell. It took the whole family to Loon Lake every summer with Michael singing in the back seat. You kept Bluebell’s key long after the car was gone. It is a lovely gift to see her again.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a handwritten recipe card. Would you tell me about it",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... blueberries, maybe? I'm not sure.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, you baked something special for every family birthday. There's no hurry at all, and I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I did? My goodness... I'm not quite sure.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, the berries in that blueberry buckle came from the lake. There's no hurry, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... Loon Lake. We saved those berries for the birthday buckle.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Loon Lake, and you saved those berries for the birthday buckle. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "6aabd44f70",
+      "summary": "Looked at 3 keepsakes (Simulated visit 15). A blue-rimmed teacup: told it herself. An old main street: heard the story from Magpie after 2 hints. A little silver rose brooch: stopped here to rest. Grounding: 19 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello dear. I see a blue-rimmed teacup on screen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes, those blue-rimmed cups were my mama Edith's. June and me had tea every Sunday afternoon at the kitchen table, and I did the pouring — I was eight, so careful, you know.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, those blue-rimmed cups were your mama Edith's. You and June had tea every Sunday afternoon at the kitchen table, and you did the pouring when you were eight, so careful. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old main street. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The family hint mentions a Saturday afternoon in Duluth with Frank. There's no hurry at all, I'm happy to tell you about it whenever you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, that little cinema on First Street comes with popcorn. No hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You have an old main street here, Rose.\nYou and Frank had a first date at the Lyric Theatre in Duluth.\nIt was a Saturday matinee.\nFrank was so nervous he bought two bags of popcorn and dropped one.\nYou kept the ticket stub in your jewellery box, my love.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is a little silver rose brooch. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm sorry dear, I don't quite recall. It's very pretty though.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "A gift on your wedding day... There's no hurry at all.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "That's very kind, dear... I think I'd like to rest a little while now, if that's all right.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "That's plenty for today. Thank you for sitting with me.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "8dfdfb6099",
+      "summary": "Looked at 3 keepsakes (Simulated visit 16). A postcard from the lake: told it herself. A blue station wagon: heard the story from Magpie after 2 hints, and heard Priya's voice note. A yellow kitchen: got there with 2 hints. Grounding: 26 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. I see a postcard from the lake on the screen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... that's Loon Lake. Anne learned to swim right off that old wooden dock, and we'd pick blueberries till our fingers were all blue.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "That's Loon Lake. Anne learned to swim right off that old wooden dock, and you picked blueberries till your fingers were all blue. Thank you for sharing that, Rose.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, that's a blue station wagon. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank built something in the garage one winter. There's no hurry, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue and you gave it a flower name. There's no hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You have a blue station wagon on the screen. Frank rebuilt an old powder-blue station wagon in your garage over one winter and you named it Bluebell. It took the whole family to Loon Lake every summer, with Michael singing in the back seat. You kept Bluebell’s key long after the car was gone. I love this gift with you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a yellow kitchen. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh... yellow, you say? I'm not quite sure yet, dear.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "That yellow kitchen is where you made a special birthday bake for the family. There is no hurry at all, I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh my... was it a cake, honey?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, it had berries from the lake in it. There is no hurry at all, I'm happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes... the Loon Lake blueberries. I made that buckle for every birthday in my little yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, you said the Loon Lake blueberries, and you made that buckle for every birthday in your little yellow kitchen. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "e87c9139a2",
+      "summary": "Looked at 3 keepsakes (Simulated visit 17). A blue-rimmed teacup: told it herself. An old cinema ticket: heard the story from Magpie after 2 hints. A little silver rose brooch: stopped here to rest. Grounding: 24 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. Would you tell me about the blue-rimmed teacup on screen. What does this bring to mind",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, that's Mama Edith's blue-rimmed cups... June and I had tea every Sunday afternoon at the kitchen table, I was eight and poured ever so careful. We kept it up over sixty years, even by phone at the end.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You’re talking about Mama Edith’s blue-rimmed cups, and tea every Sunday afternoon at the kitchen table with June. You were eight and poured ever so careful, and you kept it up over sixty years, even by phone at the end. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's an old cinema ticket. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "You have an old cinema ticket, and it feels like a Saturday afternoon in Duluth with Frank. There's no hurry at all, I'm happy to tell you about it whenever you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, this ticket is from a little cinema on First Street and popcorn was part of that day. There's no hurry at all, I'm happy to tell you about it when you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You have a lovely old cinema ticket here. You and Frank first went to the Lyric Theatre in Duluth for a Saturday matinee. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box. This is a sweet memory of you and Frank.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a little silver rose brooch. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm... I'm not quite sure, dear. It's very pretty, though.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was a gift on your wedding day. There's no hurry at all, I'm happy to tell you about it whenever you'd like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, thank you, dear. I'm feeling a bit tired now, I think I'd like to rest a while.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "That's plenty for today. Thank you for sitting with me.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "d0f83289be",
+      "summary": "Looked at 3 keepsakes (Simulated visit 18). A cabin by the lake: told it herself. A blue station wagon: heard the story from Magpie after 2 hints, and heard Priya's voice note. A yellow kitchen: got there with 2 hints. Grounding: 33 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. I see a cabin by the lake with you. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh yes, our little cabin on Loon Lake... it had that green door. Anne learned to swim right off that old wooden dock, and we'd pick blueberries till our fingers were all blue.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, our little cabin on Loon Lake with that green door. Anne learned to swim right off that old wooden dock and you picked blueberries till your fingers were all blue. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's a blue station wagon. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, Frank spent one winter in the garage rebuilding a car. There’s no hurry at all, I’m happy to tell you about it when you’d like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue, and you gave it a flower's name. There's no hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "You are looking at a blue station wagon. Frank rebuilt an old powder-blue station wagon in your garage over one winter. You named it Bluebell. It took the whole family to Loon Lake every summer with Michael singing in the back seat. You kept Bluebell's key long after the car was gone. I am here with you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is a yellow kitchen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "I'm... not sure yet. Feels kind of familiar, though.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The family hinted about something you baked for every birthday. There's no hurry at all, and I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, birthdays... hmm, was it... a cake, maybe?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "The cake had berries from the lake in it. There is no hurry at all, I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... my blueberry buckle. We made it in that yellow kitchen in Ely for every birthday, always with Loon Lake berries — more than you think, I used to say.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You mentioned your blueberry buckle and making it in that yellow kitchen in Ely for every birthday with Loon Lake berries, more than you think, you used to say. Thank you for sharing that with me, Rose.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "658eaa8a2c",
+      "summary": "Looked at 3 keepsakes (Simulated visit 19). A blue-rimmed teacup: told it herself. An old cinema ticket: heard the story from Magpie after 2 hints. A little silver rose brooch: got there with 1 hint. Grounding: 26 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose. I see a blue-rimmed teacup on screen. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... those were Mama Edith's blue-rimmed cups. June and me had tea every Sunday afternoon at the kitchen table, I was eight and poured ever so careful. We kept it up for over sixty years, even by phone later on.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Oh yes, those were Mama Edith's blue-rimmed cups. You and June had tea every Sunday afternoon at the kitchen table, you were eight and poured ever so careful, and you kept it up for over sixty years even by phone later on. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is an old cinema ticket. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, that Saturday afternoon in Duluth with Frank is a sweet memory. There's no hurry at all, I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous...",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "I hear the popcorn and Frank being nervous, and I think of that little cinema on First Street. No hurry at all, I am happy to tell you about it whenever you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "popcorn... Frank was nervous.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "Rose, this old cinema ticket is from your first date with Frank. It was a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. You kept the ticket stub in your jewellery box. It is a sweet little keepsake for you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "That's a little silver rose brooch. Would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, I'm not sure, dear. I don't quite place it right now.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, this little silver rose is a gift from your wedding day. There is no hurry at all, I am happy to tell you about it whenever you would like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, yes... Margaret pinned it on me at our wedding. She said I should always wear a rose.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "You said Margaret pinned it on you at your wedding and she said you should always wear a rose. Thank you for sharing that, Rose.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you for sharing these with me today. I loved every one of them.",
+          "invented": null
+        }
+      ]
+    },
+    {
+      "session": "2036c11e37",
+      "summary": "Looked at 3 keepsakes (Simulated visit 20). A postcard from the lake: told it herself. A blue station wagon: heard the story from Magpie after 2 hints, and heard Priya's voice note. A handwritten recipe card: got there with 2 hints. Grounding: 30 claims traced, 0 invented.",
+      "turns": [
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Hello Rose, today's theme is Simulated visit 20. I see a postcard from the lake here, would you tell me about it?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, Loon Lake... we had that little cabin with the green door, went every summer since '72. Frank would fish at dawn — never caught a thing, bless him — and Anne learned to swim off that old wooden dock, then we'd pick blueberries till our hands were all purple.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Rose, Loon Lake brings back that little cabin with the green door you went to every summer since ’72. Frank fishing at dawn and never catching a thing, bless him, and Anne learning to swim off that old wooden dock and then picking blueberries till your hands were all purple. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "Rose, this is a blue station wagon. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Frank built something in the garage one winter, Rose. There’s no hurry at all, I’m happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "blue... Frank's car? I'm sorry, dear, I can't think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "It was blue and you gave it a flower name. No hurry at all, I'm happy to tell you about it when you like.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Blue... Frank's car? I'm sorry, dear, I can't quite think of it.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "tell",
+          "text": "That is Bluebell. Frank rebuilt an old powder-blue station wagon in their garage over one winter and you named it Bluebell. It took the whole family to Loon Lake every summer, with Michael singing in the back seat. You kept Bluebell's key long after the car was gone. I love seeing this with you.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "voice",
+          "text": "Here's Priya talking about Bluebell.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "ask",
+          "text": "This is a handwritten recipe card. What does this bring to mind?",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Hmm... I'm not sure. Something about... baking?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "You baked a favorite treat for every family birthday in the yellow kitchen. There's no hurry at all, I'm happy to tell you about it with you.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, the yellow kitchen... I think... was it something sweet?",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "hint",
+          "text": "Rose, those berries came from the lake. There's no hurry at all, and I'm happy to tell you about it.",
+          "invented": 0
+        },
+        {
+          "role": "rose",
+          "mode": "reply",
+          "text": "Oh, Loon Lake... yes, dear. I saved those berries for my blueberry buckle, every birthday in that yellow kitchen.",
+          "invented": null
+        },
+        {
+          "role": "magpie",
+          "mode": "reflect",
+          "text": "Loon Lake, yes dear. You saved those berries for your blueberry buckle every birthday in that yellow kitchen. Thank you for sharing that with me.",
+          "invented": 0
+        },
+        {
+          "role": "magpie",
+          "mode": "close",
+          "text": "Thank you, that was wonderful. Let's rest here for today.",
+          "invented": null
+        }
+      ]
+    }
+  ]
+}

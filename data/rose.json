@@ -1,0 +1,491 @@
+{
+  "_note": "DEMO PERSONA. Rose is fictional. All names, places and stories are invented for the Magpie hackathon demo. Any resemblance to real people is coincidental.",
+  "person": {
+    "id": "rose",
+    "name": "Rose Ellis",
+    "maiden_name": "Hartley",
+    "preferred_name": "Rose",
+    "born": "1948-03-12",
+    "birthplace": "Duluth, Minnesota",
+    "lived": [
+      {
+        "place": "Duluth, Minnesota",
+        "from": 1948,
+        "to": 1969
+      },
+      {
+        "place": "Ely, Minnesota",
+        "from": 1969,
+        "to": 2018
+      },
+      {
+        "place": "Minneapolis, Minnesota (with daughter Anne)",
+        "from": 2018,
+        "to": null
+      }
+    ],
+    "work": "School librarian at Ely Elementary, 1971 to 2008",
+    "loves": [
+      "blueberries",
+      "the lake at dawn",
+      "tea in good cups",
+      "Frank's terrible fishing jokes",
+      "old songs on the radio"
+    ],
+    "comfort_topics": [
+      "Loon Lake",
+      "baking",
+      "her sister June",
+      "Bluebell the car"
+    ],
+    "avoid_topics": [
+      "hospitals",
+      "her parents' deaths",
+      "anything about her health or memory"
+    ]
+  },
+  "people": [
+    {
+      "id": "frank",
+      "name": "Frank Ellis",
+      "relation": "husband",
+      "born": 1946,
+      "details": "Mechanic. Rebuilt Bluebell himself. Tells bad fishing jokes."
+    },
+    {
+      "id": "june",
+      "name": "June Hartley",
+      "relation": "younger sister",
+      "born": 1951,
+      "details": "Sunday tea partner since childhood."
+    },
+    {
+      "id": "edith",
+      "name": "Edith Hartley",
+      "relation": "mother",
+      "born": 1922,
+      "details": "Gave Rose the blue-rimmed teacups."
+    },
+    {
+      "id": "margaret",
+      "name": "Margaret Ellis",
+      "relation": "mother-in-law",
+      "born": 1920,
+      "details": "Gave Rose the silver rose brooch on her wedding day."
+    },
+    {
+      "id": "anne",
+      "name": "Anne Rao",
+      "relation": "daughter",
+      "born": 1974,
+      "details": "Learned to swim at Loon Lake. Married to Vikram Rao."
+    },
+    {
+      "id": "michael",
+      "name": "Michael Ellis",
+      "relation": "son",
+      "born": 1977,
+      "details": "Rode in Bluebell's back seat every summer."
+    },
+    {
+      "id": "vikram",
+      "name": "Vikram Rao",
+      "relation": "son-in-law",
+      "born": 1972,
+      "details": "Anne's husband."
+    },
+    {
+      "id": "priya",
+      "name": "Priya Rao",
+      "relation": "granddaughter",
+      "born": 2001,
+      "details": "Main family contributor in the demo. Confirms most facts."
+    },
+    {
+      "id": "sam",
+      "name": "Sam Rao",
+      "relation": "grandson",
+      "born": 2004,
+      "details": "Second contributor. Loves the blueberry buckle."
+    }
+  ],
+  "places": [
+    {
+      "id": "loon_lake",
+      "name": "Loon Lake cabin",
+      "where": "near Ely, Minnesota",
+      "details": "Small rented cabin with a green door and a wooden dock. Summers 1972 to 1985."
+    },
+    {
+      "id": "lyric",
+      "name": "The Lyric Theatre",
+      "where": "Duluth, Minnesota",
+      "details": "Small cinema on First Street where Rose and Frank had their first date."
+    },
+    {
+      "id": "kitchen",
+      "name": "The Ely kitchen",
+      "where": "Ely, Minnesota",
+      "details": "Yellow kitchen with a radio on the windowsill."
+    },
+    {
+      "id": "hartley_house",
+      "name": "The Hartley house",
+      "where": "Duluth, Minnesota",
+      "details": "Rose's childhood home, where Sunday tea started."
+    }
+  ],
+  "stories": [
+    {
+      "id": "s1_tea",
+      "decade": "1950s",
+      "year": 1956,
+      "title": "Sunday tea with June",
+      "story": "Every Sunday afternoon, Rose and her little sister June had tea at the kitchen table in the Hartley house, using their mother Edith's blue-rimmed cups. Rose was eight and poured very carefully. They kept the tradition for over sixty years, later by phone.",
+      "people": [
+        "june",
+        "edith"
+      ],
+      "place": "hartley_house",
+      "object_item": "obj_teacup",
+      "hints": [
+        "You and your sister had a Sunday ritual...",
+        "Something warm, in your mother's blue cups..."
+      ],
+      "quilt_square": "a teapot and two small teacups with blue rims on a checked tablecloth"
+    },
+    {
+      "id": "s2_film",
+      "decade": "1960s",
+      "year": 1966,
+      "title": "First date at the Lyric",
+      "story": "Rose and Frank's first date was a Saturday matinee at the Lyric Theatre in Duluth. Frank was so nervous he bought two bags of popcorn and dropped one. Rose kept the ticket stub in her jewellery box.",
+      "people": [
+        "frank"
+      ],
+      "place": "lyric",
+      "object_item": "obj_ticket",
+      "hints": [
+        "A Saturday afternoon in Duluth, with Frank...",
+        "Popcorn, and a little cinema on First Street..."
+      ],
+      "quilt_square": "an old cinema ticket and a striped popcorn bag"
+    },
+    {
+      "id": "s3_brooch",
+      "decade": "1960s",
+      "year": 1969,
+      "title": "The silver rose brooch",
+      "story": "On their wedding day in June 1969, Frank's mother Margaret pinned a small silver rose brooch to Rose's dress and said Rose should always wear a rose. Rose wore it to every family wedding after that.",
+      "people": [
+        "frank",
+        "margaret"
+      ],
+      "place": null,
+      "object_item": "obj_brooch",
+      "hints": [
+        "A gift on your wedding day...",
+        "Something small, silver, shaped like a rose..."
+      ],
+      "quilt_square": "a small silver rose brooch on a ribbon"
+    },
+    {
+      "id": "s4_lake",
+      "decade": "1970s",
+      "year": 1972,
+      "title": "Summers at Loon Lake",
+      "story": "From 1972, the Ellis family spent every summer at a small cabin on Loon Lake with a green door and a wooden dock. Frank fished at dawn and caught almost nothing. Rose taught Anne to swim off the dock, and they picked wild blueberries along the shore.",
+      "people": [
+        "frank",
+        "anne",
+        "michael"
+      ],
+      "place": "loon_lake",
+      "object_item": "obj_pebble",
+      "hints": [
+        "The place by the water, every summer...",
+        "A cabin with a green door, and a dock..."
+      ],
+      "quilt_square": "a small cabin with a green door beside a lake and a wooden dock"
+    },
+    {
+      "id": "s5_bluebell",
+      "decade": "1970s",
+      "year": 1978,
+      "title": "Bluebell, the blue car",
+      "story": "Frank rebuilt an old powder-blue station wagon in their garage over one winter and Rose named it Bluebell. It took the whole family to Loon Lake every summer, with Michael singing in the back seat. Rose kept Bluebell's key long after the car was gone.",
+      "people": [
+        "frank",
+        "michael",
+        "anne"
+      ],
+      "place": "loon_lake",
+      "object_item": "obj_key",
+      "hints": [
+        "Frank built something in the garage one winter...",
+        "It was blue, and you gave it a flower's name..."
+      ],
+      "quilt_square": "a powder-blue station wagon on a country road"
+    },
+    {
+      "id": "s6_buckle",
+      "decade": "1980s",
+      "year": 1983,
+      "title": "Blueberry buckle for every birthday",
+      "story": "Rose baked her blueberry buckle for every family birthday in the yellow Ely kitchen, using berries saved from Loon Lake. She wrote the recipe on a card for Anne in 1983, with a note at the bottom: more berries than you think.",
+      "people": [
+        "anne"
+      ],
+      "place": "kitchen",
+      "object_item": "doc_recipe",
+      "hints": [
+        "Something you baked for every birthday...",
+        "It had berries from the lake in it..."
+      ],
+      "quilt_square": "a blueberry cake on a plate with a few loose blueberries"
+    }
+  ],
+  "items": [
+    {
+      "id": "obj_teacup",
+      "title": "A blue-rimmed teacup",
+      "type": "object",
+      "source": "photograph yourself",
+      "what": "A teacup, ideally with a blue rim",
+      "story": "s1_tea"
+    },
+    {
+      "id": "obj_ticket",
+      "title": "An old cinema ticket",
+      "type": "object",
+      "source": "photograph yourself",
+      "what": "An old paper ticket stub (make one if needed)",
+      "story": "s2_film"
+    },
+    {
+      "id": "obj_brooch",
+      "title": "A little silver rose brooch",
+      "type": "object",
+      "source": "photograph yourself",
+      "what": "A small brooch or pin, ideally a rose",
+      "story": "s3_brooch"
+    },
+    {
+      "id": "obj_pebble",
+      "title": "A smooth lake pebble",
+      "type": "object",
+      "source": "photograph yourself",
+      "what": "A smooth lake pebble",
+      "story": "s4_lake"
+    },
+    {
+      "id": "obj_key",
+      "title": "An old car key",
+      "type": "object",
+      "source": "photograph yourself",
+      "what": "An old car key on a keyring",
+      "story": "s5_bluebell"
+    },
+    {
+      "id": "doc_recipe",
+      "title": "A handwritten recipe card",
+      "type": "document",
+      "source": "handwrite yourself",
+      "what": "Recipe card: 'Blueberry Buckle - for Anne, 1983. More berries than you think! - Mom'",
+      "story": "s6_buckle"
+    },
+    {
+      "id": "doc_postcard",
+      "title": "A postcard from the lake",
+      "type": "document",
+      "source": "handwrite yourself",
+      "what": "Postcard: 'Loon Lake, July 1972. Anne swam to the dock by herself today! Frank caught one fish (small). Love, Rose'",
+      "story": "s4_lake"
+    },
+    {
+      "id": "place_water",
+      "title": "A lake at dawn",
+      "type": "place",
+      "source": "photograph today",
+      "what": "Any lake, river or pond shore at early morning",
+      "story": "s4_lake",
+      "label": "Illustration: a lake like Loon Lake"
+    },
+    {
+      "id": "place_street",
+      "title": "An old main street",
+      "type": "place",
+      "source": "photograph today",
+      "what": "An old street or a small old cinema/building",
+      "story": "s2_film",
+      "label": "Illustration: a street like First Street, Duluth"
+    },
+    {
+      "id": "gen_cabin",
+      "title": "A cabin by the lake",
+      "type": "generated",
+      "source": "Muse Image",
+      "what": "1970s film photo, small lakeside cabin with a green door, wooden dock, morning mist, no people",
+      "story": "s4_lake",
+      "label": "AI-generated illustration"
+    },
+    {
+      "id": "gen_car",
+      "title": "A blue station wagon",
+      "type": "generated",
+      "source": "Muse Image",
+      "what": "1970s film photo, powder-blue station wagon parked in a gravel driveway beside pine trees, no people",
+      "story": "s5_bluebell",
+      "label": "AI-generated illustration"
+    },
+    {
+      "id": "gen_kitchen",
+      "title": "A yellow kitchen",
+      "type": "generated",
+      "source": "Muse Image",
+      "what": "1980s film photo, yellow kitchen, radio on the windowsill, blueberry cake cooling on the counter, no people",
+      "story": "s6_buckle",
+      "label": "AI-generated illustration"
+    }
+  ],
+  "voice_notes": [
+    {
+      "id": "vn_priya",
+      "speaker": "priya",
+      "date": "2026-11-01",
+      "audio_path": "data/voice/vn_priya.mp3",
+      "story_ids": [
+        "s5_bluebell"
+      ],
+      "play_in_tell": true,
+      "tell_intro": "Here's Priya talking about Bluebell.",
+      "recording_note": "Demo only.",
+      "script": "Grandma always talked about Bluebell. That was the blue station wagon Grandpa Frank rebuilt in the garage. She said Uncle Michael sang in the back seat the whole way to the lake, every single summer.",
+      "expected_facts": [
+        "Bluebell was a blue station wagon",
+        "Frank rebuilt it in the garage",
+        "Michael sang in the back seat",
+        "They drove it to the lake"
+      ]
+    },
+    {
+      "id": "vn_sam",
+      "speaker": "sam",
+      "date": "2026-11-01",
+      "audio_path": "data/voice/vn_sam.mp3",
+      "story_ids": [
+        "s6_buckle"
+      ],
+      "play_in_tell": true,
+      "tell_intro": "Here's Sam, talking about your blueberry buckle.",
+      "recording_note": "Demo only",
+      "script": "Every birthday, Grandma made her blueberry buckle. She always said the trick was more berries than you think. Mom still has the recipe card she wrote.",
+      "expected_facts": [
+        "Rose made blueberry buckle for birthdays",
+        "Her tip was more berries than you think",
+        "Anne has the recipe card"
+      ]
+    }
+  ],
+  "simulated_recall": {
+    "_note": "For automated test sessions only. A second model plays Rose with this profile so the grounding check can run 20 sessions.",
+    "s4_lake": {
+      "level": "full",
+      "behaviour": "Remembers warmly and adds detail about the dock and blueberries."
+    },
+    "s1_tea": {
+      "level": "full",
+      "behaviour": "Remembers June and the cups, talks happily."
+    },
+    "s3_brooch": {
+      "level": "hint1",
+      "behaviour": "Unsure at first, remembers after the first hint."
+    },
+    "s6_buckle": {
+      "level": "hint2",
+      "behaviour": "Remembers the berries after the second hint, gets the name with help."
+    },
+    "s2_film": {
+      "level": "fragment",
+      "behaviour": "Says only fragments like 'popcorn... Frank was nervous'."
+    },
+    "s5_bluebell": {
+      "level": "none",
+      "behaviour": "Says 'blue... Frank's car?' then cannot recall. Needs Tell mode. Smiles when told."
+    }
+  },
+  "talk_cards": {
+    "_note": "Expected shape of generated 'Talk with Grandma' cards. Generated from confirmed stories only; these are reference examples for testing.",
+    "examples": [
+      {
+        "story_id": "s5_bluebell",
+        "opener": "Grandma, tell me about the summers you drove up to the lake.",
+        "details": [
+          "Frank rebuilt a powder-blue station wagon one winter",
+          "You named it Bluebell",
+          "Michael sang in the back seat"
+        ],
+        "tip": "If she remembers it differently, go with her version. It's her story."
+      },
+      {
+        "story_id": "s4_lake",
+        "opener": "What was the cabin at Loon Lake like in the mornings?",
+        "details": [
+          "The cabin had a green door and a wooden dock",
+          "You taught Anne to swim off the dock",
+          "You picked wild blueberries along the shore"
+        ],
+        "tip": "Ask about smells and sounds. Mornings by the water often bring back the most."
+      },
+      {
+        "story_id": "s1_tea",
+        "opener": "Did you and June still have Sunday tea when you were grown up?",
+        "details": [
+          "You used your mother Edith's blue-rimmed cups",
+          "You kept the tradition for over sixty years"
+        ],
+        "tip": "Bring a cup of tea yourself. Doing it together helps."
+      }
+    ]
+  },
+  "switch_topic": {
+    "_note": "Behaviour of the 'Talk about something else' button.",
+    "prefer": [
+      "s4_lake",
+      "s1_tea",
+      "s6_buckle"
+    ],
+    "lines": [
+      "Let's look at something else lovely.",
+      "I have something here I think you'll like.",
+      "Shall we visit somewhere else for a while?"
+    ],
+    "never_say": [
+      "you forgot",
+      "don't you remember",
+      "try again",
+      "that's wrong"
+    ]
+  },
+  "demo_session": {
+    "theme": "Summers and the lake",
+    "items_in_order": [
+      "gen_cabin",
+      "obj_key",
+      "doc_recipe"
+    ],
+    "beats": [
+      "Lake house: Rose tells the story herself (Ask mode). Story captured.",
+      "Key: Rose hesitates, gets one hint, still unsure, says 'blue... Frank's car'. Magpie gently tells the Bluebell story, then plays Priya's voice clip: 'Here's Priya talking about Bluebell.' She smiles. Fragment saved for review.",
+      "Recipe card: short and happy, then Magpie ends the session warmly.",
+      "Optional beat: show the 'Talk about something else' button once, briefly, to prove she is never stuck."
+    ]
+  },
+  "agent_rules": [
+    "Use only confirmed Engram facts. Never invent a name, place, date or event.",
+    "Never quiz, test or correct Rose. If she says something different, accept it warmly and save it for family review.",
+    "Never mention illness, memory, death, or that she has forgotten something.",
+    "Ask open, warm questions first. Hint gently twice at most. Then tell the story as a gift.",
+    "End gently if she seems tired or upset."
+  ]
+}
