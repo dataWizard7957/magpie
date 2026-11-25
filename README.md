@@ -100,3 +100,7 @@ web/                 index.html, app.js, style.css
 - Images are resized to 1024px before any model call; each session turn sends only the current keepsake and its confirmed facts.
 - `data/magpie.db` and `.env` are gitignored. Generated demo images are committed so the demo runs from a fresh clone.
 - Muse Glimmer is Apache 2.0. Muse Spark, Muse Image and Muse Voice Transcribe are used through the Meta Model API.
+
+## Live demo
+
+[magpie-i5ba.onrender.com](https://magpie-i5ba.onrender.com). Hosted on Render's free plan, so the first visit may take up to a minute while the service wakes up. AI features are switched off in this demo; uploads are disabled.
