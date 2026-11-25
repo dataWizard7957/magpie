@@ -253,3 +253,15 @@ footer {
   .reply { flex-wrap: wrap; }
   .reply input { min-width: 0; }
 }
+
+/* Shown when the server has no model API key (public demo without AI). */
+.ai-banner {
+  background: var(--rust-soft);
+  color: var(--rust);
+  border-bottom: 1px solid var(--line);
+  text-align: center;
+  font-size: .9rem;
+  font-weight: 600;
+  padding: 6px 12px;
+}
+.ai-banner[hidden] { display: none; }

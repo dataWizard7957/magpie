@@ -1,0 +1,19 @@
+# Render Blueprint: Magpie as one free web service.
+# render.com -> New -> Blueprint -> pick this repo.
+# The demo runs without AI until MODEL_API_KEY is added under the service's
+# Environment settings (the page shows "AI off" until then).
+services:
+  - type: web
+    name: magpie
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/state
+    autoDeploy: true
+    envVars:
+      - key: MAGPIE_PROVIDER
+        value: meta
+      - key: MAGPIE_ALLOW_RESET     # nobody can wipe the public demo
+        value: "0"
+      - key: MAGPIE_ALLOW_UPLOADS   # strangers can't publish files through the site
+        value: "0"

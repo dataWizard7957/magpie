@@ -37,6 +37,7 @@ const who = () => $("#contributor").value || "Priya";
 
 async function init() {
   S.state = await api("/api/state");
+  $("#ai-banner").hidden = S.state.ai_enabled !== false;
   const p = S.state.persona;
   $$("#pname, .pname").forEach((el) => (el.textContent = p.preferred_name || "Rose"));
   $("#persona").innerHTML = `${esc(p.name)} · born ${esc(String(p.born || "").slice(0, 4))} <span class="chip">${esc(p.label || "Demo persona")}</span>`;

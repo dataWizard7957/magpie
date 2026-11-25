@@ -35,6 +35,12 @@ async def _bad(_, exc: ValueError):
     return JSONResponse(status_code=400, content={"detail": str(exc)})
 
 
+def _require_uploads() -> None:
+    """Public demos set MAGPIE_ALLOW_UPLOADS=0 so strangers can't publish files through the site."""
+    if os.getenv("MAGPIE_ALLOW_UPLOADS", "1") != "1":
+        raise HTTPException(403, "Uploads are turned off in this demo.")
+
+
 def _model_error(e: Exception) -> HTTPException:
     return HTTPException(status_code=502, detail=f"Model call failed: {str(e)[:300]}")
 
@@ -103,6 +109,7 @@ def state():
                    "extract": config.PROVIDERS["meta"]["model"], "image": config.MUSE_IMAGE_MODEL,
                    "voice": config.MUSE_TRANSCRIBE_MODEL},
         "live_grounding": session.live_grounding(),
+        "ai_enabled": config.ai_enabled(),
     }
 
 
@@ -133,6 +140,7 @@ def item(item_id: str):
 @app.post("/api/items")
 async def upload_item(file: UploadFile = File(...), title: str = Form("A keepsake"), type: str = Form("object"),
                       story_id: str = Form(""), contributor: str = Form("Priya")):
+    _require_uploads()
     ext = Path(file.filename or "x.jpg").suffix.lower()
     if ext not in storage.IMAGE_EXTS:
         raise HTTPException(400, "Please upload a JPG, PNG or WebP photo.")
@@ -230,6 +238,7 @@ def _transcribe_note(vid: str, story_id: str | None) -> dict:
 @app.post("/api/voice")
 async def upload_voice(file: UploadFile = File(...), speaker: str = Form("priya"), story_id: str = Form(""),
                        play_in_tell: bool = Form(True)):
+    _require_uploads()
     ext = Path(file.filename or "note.webm").suffix.lower() or ".webm"
     if ext not in storage.AUDIO_EXTS:
         ext = ".webm"

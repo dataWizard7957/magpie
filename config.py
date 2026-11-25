@@ -63,6 +63,20 @@ ACTIVE = active_provider()
 _clients: dict[str, tuple[OpenAI, str]] = {}
 
 
+def _missing(name: str) -> list[str]:
+    """Settings a provider still needs before it can be called."""
+    p = PROVIDERS[name]
+    missing = [k for k in ("base_url", "api_key") if not p[k]]
+    if name == "glimmer" and not (p["headers"]["Modal-Key"] and p["headers"]["Modal-Secret"]):
+        missing.append("MODAL_PROXY_KEY / MODAL_PROXY_SECRET")
+    return missing
+
+
+def ai_enabled() -> bool:
+    """True when the session provider and the Meta API (extraction, images, voice) are configured."""
+    return not _missing(active_provider()) and not _missing("meta")
+
+
 def get_client(name: str | None = None) -> tuple[OpenAI, str]:
     """Return (client, model_id) for a provider. Fails loudly if config is missing."""
     name = name or active_provider()
@@ -72,9 +86,7 @@ def get_client(name: str | None = None) -> tuple[OpenAI, str]:
         raise ValueError(f"Unknown provider '{name}'. Use one of: {', '.join(PROVIDERS)}")
     p = PROVIDERS[name]
 
-    missing = [k for k in ("base_url", "api_key") if not p[k]]
-    if name == "glimmer" and not (p["headers"]["Modal-Key"] and p["headers"]["Modal-Secret"]):
-        missing.append("MODAL_PROXY_KEY / MODAL_PROXY_SECRET")
+    missing = _missing(name)
     if missing:
         raise RuntimeError(f"Provider '{name}' is missing: {', '.join(missing)}. Check your .env")
 
